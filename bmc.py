@@ -25,4 +25,4 @@ rules = ((re.compile(rule), replace) for rule, replace in rules)
 content = open(sys.argv[1], 'r').read()
 for rule, replace in rules:
     content = rule.sub(replace, content, re.MULTILINE)
-print content
+print(content)
